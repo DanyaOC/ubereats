@@ -27,8 +27,8 @@ class ResultadoActivity : AppCompatActivity() {
         for( i in 0..30){
             val fecha = LocalDateTime.now()
             val pago = String.format( "%.2f" , Random.nextDouble()* 1000 ).toDouble()
-            val medida = Datos(fecha.toString(),pago)
-            datos.add( medida)
+            val dato = Datos(fecha.toString(),pago)
+            datos.add(dato)
         }
 
     }
