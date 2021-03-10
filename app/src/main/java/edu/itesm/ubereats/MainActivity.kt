@@ -1,5 +1,6 @@
 package edu.itesm.ubereats
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -56,7 +57,11 @@ class MainActivity : AppCompatActivity() {
             servicefee1.text = "$0"
             deliveryfee1.text = "$0"
             placeorder.text= "Púchale aquí para ordenar"
+
+            val intento = Intent(this, ResultadoActivity::class.java)
+            startActivity(intento)
         }
+
     }
 
 }
